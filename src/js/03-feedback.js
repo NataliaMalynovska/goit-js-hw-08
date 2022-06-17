@@ -21,10 +21,10 @@ function popularInput(){
     const saveData = localStorage.getItem(STORAGE_KEY);
     const parseData = JSON.parse(saveData);
 
-    if(parseData.email){
+    if(parseData?.email){
     refs.input.value = parseData.email;
 }
-    if(parseData.message) {
+    if(parseData?.message) {
 refs.textarea.value = parseData.message;
 }
 }
